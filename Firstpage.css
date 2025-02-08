@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4e3a6e, #805ad5, #c850c0);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+    overflow: hidden;
+}
+
+.image123{
+    border-radius: 80%;
+}
+
+.animation-container {
+    text-align: center;
+}
+
+.animated-name {
+    font-size: 60px;
+    color: #fff;
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+.quote {
+    font-size: 20px;
+    margin-top: -23px;
+    color: #fff;
+    opacity: 0;
+    animation: fadeIn 1s 1.2s ease-out forwards;
+}
+.welcome-message {
+    font-size: 30px;
+    margin-top: 50px;
+    color: #fff;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s ease-out forwards;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s 2.5s ease-out forwards;
+}
+
+
+.login-button{
+    text-decoration: none;
+    background-color: #fea654;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px; 
+}
+.signup-button {
+    text-decoration: none;
+    background-color:  #fff;
+    color: #805ad5;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column; /* Display buttons below each other */
+    align-items: center; /* Center items horizontally */
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s 2.5s ease-out forwards;
+}
+
+
+.login-button{
+    width: 200px; /* Adjust the width as needed */
+    font-size: 20px; /* Adjust the font size as needed */
+    margin: 10px 0; /* Add margin to separate the buttons */
+}
+.login-button:hover{
+    background-color: #c37934;
+    cursor: pointer; /* Add cursor: pointer to make it clickable */
+
+}
+
+.signup-button {
+    width: 200px; /* Adjust the width as needed */
+    font-size: 18px; /* Adjust the font size as needed */
+    margin: 10px 0; /* Add margin to separate the buttons */
+}
+
+.signup-button:hover {
+    background-color: #c0bebe;
+    cursor: pointer; /* Add cursor: pointer to make it clickable */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

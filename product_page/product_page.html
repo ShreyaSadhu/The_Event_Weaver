@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Explore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="product_page.css">
+    <link rel="stylesheet" href="/about_page/header.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="mid">
+                <ul class="navbar">
+
+                    <div style="color: white; margin-left: 40px; font-size: 35px; font-weight: 600;">Smart</div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                   
+
+
+                    <li style="margin-top: 6px;"><a href="/landing_page/landing_page.html" class="active"><i
+                                class="fa-solid fa-house"></i><br> Home</a></li>
+                    <li style="margin-top: 6px;"><a href="#"><i class="fa-solid fa-bus"></i> <br> Buses</a></li>
+                    <li style="margin-top: 6px;"><a href="#"><i class="fa-solid fa-train"></i><br>Trains</a>
+                    </li>
+                    <li style="margin-top: 6px;"><a href="#"><i class="fa-solid fa-hotel"></i><br> Hotels</a>
+                    </li>
+                    <li style="margin-top: 6px;"><a href="#"><i class="fa-solid fa-taxi"></i> <br>Cabs</a></li>
+                    <li style="margin-top: 6px;"><a href="/product_page/product_page.html"><i
+                                class="fa-solid fa-book-open-reader"></i>
+                            <br>Explore</a></li>
+                    <li style="margin-top: 6px;">
+                        <form class="example" action="/action_page.php" onsubmit="return showInput(event)">
+                            <input type="text" placeholder="Search.." name="search" id="searchInput">
+                            &nbsp;&nbsp;
+                            <button type="submit" id="searchButton"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </li>
+
+
+                    <div class="right1">
+                        <div class="r1">
+                            <button class="btn"><a href="/login_signup/login.html">Login</a></button>
+                            <button class="btn"><a href="/login_signup/Signup.html">Sign Up</a></button>
+                        </div>
+                    </div>
+
+                    <!-- Right sidebar -->
+                    <div class="right">
+                        <div class="main_box">
+                            <input type="checkbox" id="check">
+                            <div class="btn_one">
+                                <label for="check">
+                                    <i class="fas fa-bars"></i>
+                                </label>
+                            </div>
+                            <div class="sidebar_menu">
+                                <div class="logo">
+                                    <a href="#">Smart</a>
+                                </div>
+                                <div class="btn_two">
+                                    <label for="check">
+                                        <i class="fas fa-times"></i>
+                                    </label>
+                                </div>
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-qrcode"></i> Dashboard</a></li>
+                                        <li><a
+                                                href="https://www.google.com/maps/place/Darjeeling,+West+Bengal/@27.0331949,88.2646751,13z/data=!3m1!4b1!4m6!3m5!1s0x39e42e654cf501bb:0x4175555979d4702a!8m2!3d27.0410218!4d88.2662745!16zL20vMDE5amxx?entry=ttu"><i
+                                                    class="fa-solid fa-location-dot"></i> Location</a></li>
+                                        <li><a href="/blog_page/blog2.html"><i class="fas fa-stream"></i> Overview</a>
+                                        </li>
+                                        <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Events</a>
+                                        </li>
+                                        <li><a href="/about_page/about_page.html"><i
+                                                    class="fa-regular fa-address-card"></i> About</a>
+                                        </li>
+                                        <li><a href="#"><i class="fa-solid fa-gears"></i> Setting</a></li>
+                                        <li><a href="#"><i class="fas fa-phone-volume"></i> Contacts</a></li>
+                                        <li><a href="/blog_page/blog2.html"><i class="fa-solid fa-check"></i> Blog </a>
+                                        </li>
+                                        <li><a href="/comments/blog.html"><i class="fas fa-comments"></i> Feedback</a>
+                                        </li>
+                                        <li><a href="/landing_page/landing_page.html"><i
+                                                    class="fa-solid fa-right-to-bracket"></i> Log out</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="social_media">
+                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <p style="margin-top: 130px; font-size: 50px; margin-bottom:-20px;"><b>The Photo Album</b></p>
+
+ <!-- Second Auto Swap -->
+ <div class="container">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://static.toiimg.com/thumb/113194873/Darjeeling-West-Bengal.jpg?width=636&height=358&resize=4" class="slideshow-img" alt="Photo 1">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://www.gokitetours.com/wp-content/uploads/2023/08/Darjeeling-scaled.webp" class="slideshow-img" alt="Photo 2">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://siliguritourism.com/wp-content/uploads/2024/01/Darjeeling-West-Bengal-1024x576.jpg" class="slideshow-img" alt="Photo 3">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper" style="margin-top: -10px; margin-bottom: 50px;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-content"  style="height: 500px;">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFlyR9i6gt6C4VvDE3GfNWSpJtso_gcg-cA&s" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Lorem, ipsum.</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                    molestias ipsam possimus unde fuga.</p>
+                                <button class="button">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat above block for additional slides -->
+
+
+            <div class="swiper-slide">
+                <div class="slide-content"  style="height: 500px;">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="https://etripto.in/uploads/0000/1/2024/07/10/darjeeling.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Lorem, ipsum.</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                    molestias ipsam possimus unde fuga.</p>
+                                <button class="button">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="swiper-slide">
+                <div class="slide-content"  style="height: 500px;">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy_huJ64_4OUfCqOb2SqWEjw7Bxxeqz49ezQ&s" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Lorem, ipsum.</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                    molestias ipsam possimus unde fuga.</p>
+                                <button class="button">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="swiper-slide">
+                <div class="slide-content"  style="height: 500px;">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2VFkC7oKJm50ALVyWkS1yhw15kvKJbzNAPQ&s" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Lorem, ipsum.</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                    molestias ipsam possimus unde fuga.</p>
+                                <button class="button">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="swiper-slide">
+                <div class="slide-content"  style="height: 500px;">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="https://image.kesari.in/upload/NS/rsz_loop.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Lorem, ipsum.</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                    molestias ipsam possimus unde fuga.</p>
+                                <button class="button">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="swiper-slide">
+                <div class="slide-content"  style="height: 500px;">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhbnOsLrbMo8VgEv7TVlD34_SFXuDfihcpaA&s" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Lorem, ipsum.</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                    molestias ipsam possimus unde fuga.</p>
+                                <button class="button">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="card.js"></script>
+    <!-- <script src="card2.js"></script> -->
+
+    <!-- Slideshow JS -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+    <section class="dark-purple-section" id="about">
+        <div class="section-content">
+            <h2>About Us</h2>
+            FYBCA ABASAHEB GARWARE COLLEGE
+        </div>
+
+
+        <div class="section-content">
+            <h2>Contact Information</h2>
+            SHREYA SADHU: @ _shreya_ sadhu_
+        </div>
+
+
+        <div class="section-content">
+            <h2>Project Names</h2>
+            SMART
+        </div>
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+body {
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    margin: 100px;
+    margin-left: 270px;
+    margin-right: 50px;
+    background-color: #f7e9e9;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Adjust width as needed */
+    margin-bottom: 20px; /* Adjust spacing between containers */
+    font-size: 20px;
+    text-align: center;
+}
+
+.container:nth-child(odd) .speech-bubble {
+    order: 1; /* Move speech bubble to the right on odd containers */
+}
+
+.container:nth-child(odd) .circle {
+    order: 1; /* Move circle to the left on odd containers */
+}
+
+.speech-bubble {
+    font-size: 17px;
+    position: relative;
+    background: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
+    width: 700px; /* Increase width */
+    height: 150px; /* Decrease height */
+    padding: 20px;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -20px; /* Adjust as necessary */
+    left: 40px; /* Adjust as necessary */
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+    z-index: 1;
+}
+
+.speech-bubble::before {
+    content: '';
+    position: absolute;
+    bottom: -22px; /* Adjust as necessary */
+    left: 38px; /* Adjust as necessary */
+    width: 0;
+    height: 0;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-top: 22px solid black;
+    z-index: 0;
+}
+
+.circle {
+    width: 140px;
+    height: 140px;
+    border: 2px solid black;
+    background-color: white; /* Change the color as needed */
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+}
+.circle-image {
+    position: absolute;
+    top: -20px; /* Adjust this value to move the image up/down */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px; /* Adjust width as needed */
+    height: 140px; /* Adjust height as needed */
+    border-radius: 50%;
+    border: 2px solid black; /* Optional: add a border around the image */
+}
+
+.circle-name {
+    font-size: 20px;
+    position: absolute;
+    bottom: -50px; /* Adjust to place text below the circle */
+    width: 100%;
+    text-align: center;
+}
+
+/* Basic styling for the more link */
+.more-link {
+    color: blue;
+    font-size: 20px;
+    margin-right: 200px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Hide the additional content by default */
+.additional-content {
+    display: none;
+}
+
+.speech-bubble1 {
+    font-size: 19px;
+    position: relative;
+    background: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 800px; /* Increase width */
+    height: 300px; /* Decrease height */
+    /* margin: 20px; */
+    padding: 50px;
+}
+
+.speech-bubble1::after {
+    content: '';
+    position: absolute;
+    bottom: -20px; /* Adjust as necessary */
+    left: 40px; /* Adjust as necessary */
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+    z-index: 1;
+}
+
+.speech-bubble1::before {
+    content: '';
+    position: absolute;
+    bottom: -22px; /* Adjust as necessary */
+    left: 38px; /* Adjust as necessary */
+    width: 0;
+    height: 0;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-top: 22px solid black;
+    z-index: 0;
+}
+
+.circle1 {
+    width: 200px;
+    height: 140px;
+    border: 2px solid black;
+    background-color: white; /* Change the color as needed */
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+}
+
+.circle-image1 {
+    position: absolute;
+    top: -20px; /* Adjust this value to move the image up/down */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px; /* Adjust width as needed */
+    height: 140px; /* Adjust height as needed */
+    border-radius: 50%;
+    border: 2px solid black; /* Optional: add a border around the image */
+}
+
+.circle-name1 {
+    font-size: 20px;
+    position: absolute;
+    bottom: -50px; /* Adjust to place text below the circle */
+    width: 100%;
+    text-align: center;
+}
+
+.dark-purple-section {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    margin: -40px;
+    margin-right: -120px;
+    margin-left: -270px;
+    background-color: #f95757;
+    color: #fff;
+    padding: 3px 3px;
+    text-align: center;
+}
